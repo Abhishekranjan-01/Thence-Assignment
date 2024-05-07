@@ -1,3 +1,4 @@
+import ExpenseReducedCard from "./ExpenseReducedCard";
 import OptimizationCard from "./OptimizationCard";
 import StaffDeployment from "./StaffDeploymentCard";
 
@@ -17,6 +18,7 @@ export default function HeroSection() {
         <div className="relative">
           <OptimizationCard />
           <StaffDeployment />
+          <ExpenseReducedCard />
           //Image Container
           <div className="w-1/2 md:w-fit ">
             <img

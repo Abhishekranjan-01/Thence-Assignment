@@ -1,3 +1,5 @@
+import { cardsData } from "./cardsData";
+
 export default function StaffDeployment() {
   return (
     <div className="absolute bottom-10 -left-16 flex flex-row items-center justify-evenly w-[245px] h-[88px] bg-white rounded-full shadow-lg">
@@ -16,7 +18,9 @@ export default function StaffDeployment() {
       </svg>
 
       <div className="flex flex-col font-Manrope font-semibold ">
-        <h3 className="text-[#1C1C1C] text-2xl">10 DAYS</h3>
+        <h3 className="text-[#1C1C1C] text-2xl">
+          {cardsData.staff_deployment} DAYS
+        </h3>
         <h4 className="text-base text-[#828282]">Staff Deployment</h4>
       </div>
     </div>
