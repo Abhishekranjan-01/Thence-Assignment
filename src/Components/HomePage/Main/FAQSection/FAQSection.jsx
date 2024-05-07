@@ -1,6 +1,7 @@
+import QNA from "./QNA";
 export default function FAQSection() {
   return (
-    <section className="flex flex-row w-[96%] mx-auto bg-[#E8EEE7] rounded-[40px] pt-16 ">
+    <section className="flex flex-row gap-40 w-[96%] mx-auto bg-[#E8EEE7] rounded-[40px] pt-16 ">
       <div className="flex flex-col items-end gap-16">
         <div className="flex flex-col w-[405px]">
           <h2 className="text-[#9E9D9D] text-[32px] font-Covered_By_Your_Grace font-[400]">
@@ -42,7 +43,9 @@ export default function FAQSection() {
       </div>
 
       {/* FAQ SECTION */}
-      <div></div>
+      <div>
+        <QNA />
+      </div>
     </section>
   );
 }
