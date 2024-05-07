@@ -1,4 +1,5 @@
 import HomePage from "./Components/HomePage/HomePage";
+import RegistrationForm from "./Components/ReigtrationForm/RegistrationForm";
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
           fill="#333333"
         />
       </svg> */}
-      <HomePage />
+      {/* <HomePage /> */}
+      <RegistrationForm />
     </>
   );
 }
