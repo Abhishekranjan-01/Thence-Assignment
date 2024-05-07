@@ -5,6 +5,9 @@ export default {
     extend: {
       fontFamily: {
         Manrope: "Manrope",
+        Covered_By_Your_Grace: "Covered By Your Grace",
+        Questrial: "Questrial",
+        Noto_Sans: "Noto Sans",
       },
       screens: {
         xxs: "320px",
