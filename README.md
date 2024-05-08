@@ -2,7 +2,9 @@
 
 This project was bootstrapped with [Create Vite](https://vitejs.dev/guide/).
 
-## Steps To Run This Project:-
+**[Live Link](https://thence-assignment-amber.vercel.app/) to view it in your browser.**
+
+## Steps To Run This Project Locally:-
 
 In the project directory, you can run:
 
@@ -28,7 +30,5 @@ In the project directory, you can run:
 - **Material Ui:** It is used in project to have accordian effect in FAQ section Of Home page.
 
 - **React-icons:** To have icons on app for better UI.
-
-**[Live Link](https://thence-assignment-amber.vercel.app/) to view it in your browser.**
 
 **_Must use email:_** `xyz@abc.com` in registration page for successful redirection to "success Page".
