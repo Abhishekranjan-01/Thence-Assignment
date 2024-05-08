@@ -29,6 +29,6 @@ In the project directory, you can run:
 
 - **React-icons:** To have icons on app for better UI.
 
-**[Live Link](http://localhost:3000) to view it in your browser.**
+**[Live Link](https://thence-assignment-amber.vercel.app/) to view it in your browser.**
 
 **_Must use email:_** `xyz@abc.com` in registration page for successful redirection to "success Page".
