@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create Vite](https://vitejs.dev/guide/).
 
-**[Live Link](https://thence-assignment-amber.vercel.app/) to view it in your browser.**
+**[Live Link](https://thence-assignment-amber.vercel.app/) to view this project in your browser.**
 
 ## Steps To Run This Project Locally:-
 
