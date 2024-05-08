@@ -50,7 +50,7 @@ export default function HeroSection() {
             <div className="absolute bottom-0 ">
               <button
                 type="button"
-                className="justify-self-start flex items-center justify-center gap-5 w-[245px] h-[88px] bg-[#1C1C1C] font-Manrope font-semibold text-xl rounded-[100px]"
+                className="justify-self-start flex items-center justify-center gap-5 w-[245px] h-[88px] bg-[#1C1C1C] hover:bg-[#4E4E4E] transition-all duration-500 ease-in-out font-Manrope font-semibold text-xl rounded-[100px]"
               >
                 <span>Explore More</span>
                 <span>

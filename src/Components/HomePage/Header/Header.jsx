@@ -15,7 +15,7 @@ export default function Header() {
         </button>
         <button
           type="button "
-          className="sm:w-[175px] xxl:w-[189.56px] sm:h-[50px] xxl:h-[77.22px] text-white bg-[#1C1C1C] border rounded-full"
+          className="sm:w-[175px] xxl:w-[189.56px] sm:h-[50px] xxl:h-[77.22px] text-white bg-[#1C1C1C] border rounded-full hover:bg-[#4E4E4E] transition-all duration-500 ease-in-out"
         >
           Get Onboard Talent
         </button>
