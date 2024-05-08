@@ -1,10 +1,16 @@
+import { useNavigate } from "react-router-dom";
 import HeaderTitle from "../../HomePage/Header/HeaderTitle";
 
 export default function RegistrationFormHeader() {
+  const navigate = useNavigate();
   return (
     <header className="flex justify-between items-center sm:px-4 m-6 sm:h-[70px] xxl:h-[111.17px] ">
       <HeaderTitle />
-      <div className="cursor-pointer">
+      <button
+        type="button"
+        className="cursor-pointer"
+        onClick={() => navigate("/")}
+      >
         <svg
           width="64"
           height="64"
@@ -47,7 +53,7 @@ export default function RegistrationFormHeader() {
             </clipPath>
           </defs>
         </svg>
-      </div>
+      </button>
     </header>
   );
 }

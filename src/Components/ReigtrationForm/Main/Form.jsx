@@ -1,5 +1,6 @@
 import { Suspense, lazy, useEffect, useState } from "react";
 import { emailToCheck } from "./emailToCheck";
+import { useNavigate } from "react-router-dom";
 
 const WarningMessage = lazy(() => import("./WarningMessage"));
 
@@ -9,6 +10,7 @@ export default function Form() {
   const [disableButton, setDisableButton] = useState(false);
   const [showWarningMessage, setShowWarningMessage] = useState(false);
 
+  const navigate = useNavigate("");
   useEffect(() => {
     if (name && email) {
       setDisableButton(true);
@@ -30,6 +32,7 @@ export default function Form() {
           setShowWarningMessage(true);
         } else {
           setShowWarningMessage(false);
+          navigate("/Success+Page");
         }
         console.log("Submit Detected");
       }}
