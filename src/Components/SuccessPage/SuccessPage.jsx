@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import HeaderTitle from "../HomePage/Header/HeaderTitle";
 import { useNavigate } from "react-router-dom";
+import Footer from "./Footer";
 
 export default function SuccessPage() {
   const [timer, setTimer] = useState(5);
   const navigate = useNavigate();
   useEffect(() => {
-    console.log("Inside Effect");
-    if (timer === 0) {
+    if (timer < 0) {
       navigate("/");
     }
     setTimeout(() => {
@@ -48,10 +48,7 @@ export default function SuccessPage() {
         </div>
       </div>
 
-      <footer className=" mx-auto w-fit text-xl text-[#727272] font-normal text-center ">
-        Redirecting you to Homepage{" "}
-        <span className=" text-[#1C1C1C] font-bold">in {timer} Seconds</span>
-      </footer>
+      <Footer timer={timer} />
     </main>
   );
 }
