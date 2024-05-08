@@ -1,9 +1,13 @@
-import { useEffect, useState } from "react";
+import { Suspense, lazy, useEffect, useState } from "react";
+import { emailToCheck } from "./emailToCheck";
+
+const WarningMessage = lazy(() => import("./WarningMessage"));
 
 export default function Form() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [disableButton, setDisableButton] = useState(false);
+  const [showWarningMessage, setShowWarningMessage] = useState(false);
 
   useEffect(() => {
     if (name && email) {
@@ -22,6 +26,11 @@ export default function Form() {
     <form
       onSubmit={(e) => {
         e.preventDefault();
+        if (email !== emailToCheck.email) {
+          setShowWarningMessage(true);
+        } else {
+          setShowWarningMessage(false);
+        }
         console.log("Submit Detected");
       }}
       action=""
@@ -36,14 +45,26 @@ export default function Form() {
         className="w-full bg-[#EFEFEF] py-5 rounded-[64px] px-10 text-[#1C1C1C] text-xl font-medium outline-none"
       />
       <div className="flex flex-col gap-12">
-        <input
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          type="email"
-          name="email"
-          placeholder="Enter your email"
-          className="w-full bg-[#EFEFEF] py-5 rounded-[64px] px-10 text-[#1C1C1C] text-xl font-medium outline-none"
-        />
+        <div className="flex flex-col gap-3">
+          <input
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            className={
+              (showWarningMessage
+                ? `bg-[#F5F8FF] border border-[#537FF1]`
+                : `bg-[#EFEFEF]`) +
+              " w-full py-5 rounded-[64px] px-10 text-[#1C1C1C] text-xl font-medium outline-none"
+            }
+          />
+          {showWarningMessage && (
+            <Suspense fallback={<h1>Loading...</h1>}>
+              <WarningMessage />
+            </Suspense>
+          )}
+        </div>
 
         <button
           type="submit"

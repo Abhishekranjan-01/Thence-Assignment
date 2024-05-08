@@ -4,7 +4,7 @@ export default function RegistrationFormHeader() {
   return (
     <header className="flex justify-between items-center sm:px-4 m-6 sm:h-[70px] xxl:h-[111.17px] ">
       <HeaderTitle />
-      <div>
+      <div className="cursor-pointer">
         <svg
           width="64"
           height="64"
